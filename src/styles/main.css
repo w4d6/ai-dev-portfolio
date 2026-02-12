@@ -45,6 +45,9 @@
   --shadow-md: rgba(0, 0, 0, 0.1) 0 30px 80px;
   --shadow-accent: rgba(232, 164, 184, 0.4) 0 10px 30px;
 
+  /* Navigation */
+  --nav-height: 72px;
+
   /* Transitions */
   --transition: 0.3s ease;
   --transition-slow: 0.5s ease;
@@ -147,7 +150,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: var(--nav-height);
 }
 
 .nav__logo {
@@ -186,7 +189,8 @@ ul {
   transition: width var(--transition);
 }
 
-.nav__links a:hover {
+.nav__links a:hover,
+.nav__links a.is-active {
   color: var(--color-primary);
 }
 
@@ -479,6 +483,7 @@ ul {
 .card__image {
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card__image img {
@@ -531,7 +536,8 @@ ul {
   font-weight: 500;
   letter-spacing: 0.05em;
   cursor: pointer;
-  transition: all var(--transition);
+  transition: background-color var(--transition), color var(--transition),
+              border-color var(--transition), box-shadow var(--transition);
   border: 1px solid transparent;
   text-align: center;
 }
@@ -655,6 +661,11 @@ ul {
   letter-spacing: 0.05em;
 }
 
+/* --- Body States --- */
+body.modal-open {
+  overflow: hidden;
+}
+
 /* --- Animations --- */
 @keyframes fadeUp {
   to {
@@ -776,7 +787,7 @@ ul {
   .nav__links {
     display: none;
     position: absolute;
-    top: 72px;
+    top: var(--nav-height);
     left: 0;
     right: 0;
     background: var(--color-bg-primary);
