@@ -1,0 +1,385 @@
+# ============================================================
+# Design System Prompt (Abstract / Reusable)
+# ============================================================
+# This YAML captures the visual identity, mood, and design
+# principles extracted from a reference site. It is abstracted
+# from specific content so it can be applied to any project.
+# ============================================================
+
+meta:
+  name: "Warm Elegant Minimal"
+  description: >
+    Warm and soft feminine aesthetic with a Japanese editorial feel.
+    Combines serif typography with generous whitespace and
+    subtle pink accent tones for an approachable yet refined look.
+  keywords:
+    - warm
+    - elegant
+    - minimal
+    - soft
+    - feminine
+    - editorial
+    - clean
+
+# --------------------------------------------------
+# Color Palette
+# --------------------------------------------------
+colors:
+  primary:
+    base: "#e8a4b8"          # Muted rose / dusty pink
+    dark: "#d48fa3"          # Deeper rose for hover / emphasis
+    description: >
+      Warm dusty pink that serves as the main brand accent.
+      Used sparingly for active states, highlights, and CTAs.
+
+  accent:
+    base: "#ffc0cb"          # Soft pink
+    soft: "#fff0f3"          # Very pale pink (tint)
+    description: >
+      Lighter pink tones used for badges, tags, and subtle
+      background highlights. Creates a gentle warmth.
+
+  background:
+    primary: "#ffffff"       # Pure white
+    secondary: "#fafafa"     # Off-white / very light gray
+    tertiary: "#f5f5f5"      # Light gray for sections
+    warm: "#faf9f5"          # Warm off-white with a slight cream tint
+    description: >
+      Near-white backgrounds with minimal contrast between layers.
+      The warm variant adds a slight cream undertone.
+
+  text:
+    primary: "#333333"       # Dark gray (not pure black)
+    secondary: "#888888"     # Medium gray for supporting text
+    inverse: "#ffffff"       # White text on colored backgrounds
+    description: >
+      Soft dark gray instead of pure black creates a gentler,
+      more approachable reading experience.
+
+  border:
+    default: "#eeeeee"      # Very light gray
+    soft: "#f5f5f5"          # Almost invisible dividers
+    description: >
+      Extremely subtle borders that define structure without
+      visual heaviness.
+
+  feedback:
+    success: "#b5e8b5"      # Soft green
+    warning: "#ffe5a0"      # Soft yellow / gold
+    error: "#ffb5b5"        # Soft red / coral
+    description: >
+      Muted, pastel-toned feedback colors that maintain the
+      overall softness of the palette.
+
+  semantic:
+    overlay: "rgba(0, 0, 0, 0.4)"
+    modal_bg: "rgba(255, 255, 255, 0.95)"
+    description: >
+      Semi-transparent overlays for modal backdrops.
+      Modal backgrounds use near-opaque white.
+
+# --------------------------------------------------
+# Typography
+# --------------------------------------------------
+typography:
+  font_strategy: "serif-first"
+  description: >
+    Serif-first approach for an editorial, high-quality feel.
+    Japanese Mincho (serif) fonts for body and headings.
+    Monospace for code/technical content only.
+
+  font_families:
+    primary:
+      stack: '"Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif'
+      weight_range: [400, 700]
+      usage: "Body text, headings, and UI elements"
+    monospace:
+      stack: '"SF Mono", "Fira Code", "Consolas", monospace'
+      usage: "Code blocks and technical content only"
+
+  scale:
+    h1:
+      size: "32px"
+      weight: 400
+      line_height: 1.8
+      letter_spacing: "0.15em"
+      description: "Large, airy headings with wide letter-spacing"
+    h2:
+      size: "24px"
+      weight: 700
+      line_height: 1.6
+      letter_spacing: "0.05em"
+    h3:
+      size: "18px"
+      weight: 700
+      line_height: 1.5
+    body:
+      size: "16px"
+      weight: 400
+      line_height: 1.8
+      description: "Generous line-height for comfortable reading"
+    small:
+      size: "12px–14px"
+      weight: 400
+      line_height: 1.6
+    label:
+      size: "11px–12px"
+      weight: 600
+      letter_spacing: "0.05em"
+      text_transform: "uppercase (for en) / normal (for ja)"
+
+# --------------------------------------------------
+# Spacing & Layout
+# --------------------------------------------------
+spacing:
+  unit: "8px"
+  scale:
+    xs: "4px"
+    sm: "8px"
+    md: "16px"
+    lg: "24px"
+    xl: "32px"
+    xxl: "48px"
+    section: "64px–80px"
+  description: >
+    Generous whitespace throughout. Sections breathe with
+    large vertical padding. Cards and elements have
+    comfortable internal spacing.
+
+layout:
+  max_width: "1200px"
+  content_padding: "24px–40px"
+  grid:
+    columns: 3
+    gap: "24px"
+    responsive:
+      tablet: "2 columns"
+      mobile: "1 column"
+  description: >
+    Clean grid-based layout. Cards arranged in a uniform
+    3-column grid with consistent gaps.
+
+# --------------------------------------------------
+# Component Styles
+# --------------------------------------------------
+components:
+  card:
+    background: "#fafafa"
+    border: "1px solid #eeeeee"
+    border_radius: "8px"
+    shadow: "none (default) / rgba(0,0,0,0.08) 0 2px 8px (hover)"
+    overflow: "hidden"
+    transition: "transform 0.3s ease, box-shadow 0.3s ease"
+    hover:
+      transform: "translateY(-4px)"
+      shadow: "rgba(0,0,0,0.08) 0 2px 8px"
+    description: >
+      Minimal cards with subtle borders. Shadow appears only
+      on hover, creating a gentle lift effect.
+
+  image_in_card:
+    border_radius: "6px–8px (top corners)"
+    aspect_ratio: "4:3 or 1:1"
+    object_fit: "cover"
+    description: >
+      Images fill the top portion of cards with rounded top
+      corners. Consistent aspect ratios across the grid.
+
+  button:
+    primary:
+      background: "#e8a4b8"
+      color: "#ffffff"
+      border: "1px solid #e8a4b8"
+      border_radius: "50px"
+      padding: "8px 24px"
+      font_weight: 500
+      hover:
+        background: "#d48fa3"
+        shadow: "rgba(232,164,184,0.4) 0 10px 30px"
+    secondary:
+      background: "transparent"
+      color: "#888888"
+      border: "1px solid #eeeeee"
+      border_radius: "50px"
+      padding: "8px 24px"
+      hover:
+        border_color: "#e8a4b8"
+        color: "#e8a4b8"
+    description: >
+      Pill-shaped (fully rounded) buttons. Primary uses the
+      rose accent; secondary is ghost-style with light borders.
+
+  badge:
+    background: "#fff0f3"
+    color: "#e8a4b8"
+    border_radius: "50px"
+    padding: "6px 16px"
+    font_size: "11px"
+    font_weight: 600
+    description: >
+      Small pill-shaped labels with a soft pink tint background.
+      Used for category tags or status indicators.
+
+  progress_bar:
+    track_background: "#f5f5f5"
+    fill_background: "linear-gradient(to right, #ffc0cb, #e8a4b8)"
+    height: "3px–4px"
+    border_radius: "2px"
+    description: >
+      Thin, elegant progress indicators with a pink gradient fill.
+
+  modal:
+    background: "rgba(255, 255, 255, 0.95)"
+    shadow: "rgba(0,0,0,0.1) 0 30px 80px"
+    border_radius: "12px–16px"
+    padding: "32px"
+    overlay: "rgba(0, 0, 0, 0.4)"
+    transition: "opacity 0.3s ease, transform 0.3s ease"
+    description: >
+      Near-opaque white modals with large, diffused shadows.
+      Content appears to float above a dimmed backdrop.
+
+  code_block:
+    background: "#faf9f5"
+    border: "1px solid rgba(31, 30, 29, 0.15)"
+    border_radius: "8px"
+    padding: "24px"
+    font_family: "monospace"
+    font_size: "13px–14px"
+    line_height: 1.7
+    decoration:
+      style: "macOS window dots"
+      colors: ["#ffb5b5", "#ffe5a0", "#b5e8b5"]
+    description: >
+      Warm-tinted code blocks with macOS-style window chrome
+      dots (red, yellow, green) for a friendly, polished feel.
+
+  navigation:
+    style: "minimal horizontal"
+    background: "#ffffff"
+    position: "sticky top"
+    shadow: "none or very subtle on scroll"
+    link_style:
+      color: "#333333"
+      hover_color: "#e8a4b8"
+      font_weight: 400
+      text_decoration: "none"
+    description: >
+      Clean, minimal navigation bar with text-only links.
+      No background color change; subtle accent color on hover.
+
+  section_divider:
+    style: "short centered line"
+    color: "#e8a4b8"
+    width: "40px–60px"
+    height: "3px"
+    border_radius: "2px"
+    description: >
+      A small horizontal accent line centered above section
+      headings. Serves as a subtle visual separator.
+
+# --------------------------------------------------
+# Shadows
+# --------------------------------------------------
+shadows:
+  none: "none"
+  sm: "rgba(0, 0, 0, 0.08) 0 2px 8px"
+  md: "rgba(0, 0, 0, 0.1) 0 30px 80px"
+  lg: "rgba(0, 0, 0, 0.15) 0 40px 80px"
+  accent: "rgba(232, 164, 184, 0.4) 0 10px 30px"
+  description: >
+    Shadows are minimal by default and heavily diffused.
+    The accent shadow uses the primary pink tone for branded
+    elements like CTA buttons.
+
+# --------------------------------------------------
+# Animations & Transitions
+# --------------------------------------------------
+animations:
+  default_duration: "0.3s"
+  easing: "ease / cubic-bezier(0.4, 0, 0.2, 1)"
+  effects:
+    hover_lift:
+      transform: "translateY(-4px)"
+      shadow: "sm"
+      duration: "0.3s"
+    fade_in:
+      opacity: "0 → 1"
+      duration: "0.5s"
+    shimmer:
+      type: "keyframe"
+      description: >
+        A subtle shimmer/loading animation for skeleton
+        states or loading placeholders.
+    scale_in:
+      transform: "scale(0.95) → scale(1)"
+      opacity: "0 → 1"
+      duration: "0.3s"
+  description: >
+    Restrained, smooth animations. Primarily hover lifts
+    on cards and fade-ins for content. No flashy or
+    attention-grabbing motion.
+
+# --------------------------------------------------
+# Mood & Atmosphere
+# --------------------------------------------------
+mood:
+  overall: >
+    Warm, inviting, and quietly sophisticated. The design
+    feels like browsing a curated boutique or a high-end
+    lifestyle magazine — not loud, but confidently refined.
+  adjectives:
+    - warm
+    - elegant
+    - approachable
+    - feminine
+    - curated
+    - editorial
+    - minimal
+    - refined
+    - gentle
+    - sophisticated
+  visual_metaphors:
+    - "A handwritten letter on quality paper"
+    - "A boutique shop window at golden hour"
+    - "A carefully arranged flat-lay photograph"
+  avoid:
+    - "Harsh contrasts or neon colors"
+    - "Heavy shadows or dark themes"
+    - "Loud, attention-grabbing animations"
+    - "Dense, information-heavy layouts"
+    - "Industrial or tech-heavy aesthetics"
+
+# --------------------------------------------------
+# Design Principles
+# --------------------------------------------------
+principles:
+  - name: "Whitespace is a Feature"
+    description: >
+      Generous spacing between elements creates breathing room
+      and draws attention to content through absence.
+
+  - name: "Subtle Accent, Not Dominant Color"
+    description: >
+      The primary pink is used sparingly — for active states,
+      small badges, and thin progress bars. It never overwhelms.
+
+  - name: "Soft Over Sharp"
+    description: >
+      Rounded corners (pill buttons, rounded cards), muted colors,
+      and diffused shadows create a gentle, approachable feel.
+
+  - name: "Typography Carries the Design"
+    description: >
+      Serif fonts with generous letter-spacing and line-height
+      provide elegance without needing heavy visual decoration.
+
+  - name: "Content First, Chrome Last"
+    description: >
+      UI elements (borders, backgrounds, navigation) are minimal.
+      The focus is entirely on the content within the cards/grid.
+
+  - name: "Consistent Rhythm"
+    description: >
+      Uniform card sizes, consistent gaps, and repeating patterns
+      create a calm, predictable visual rhythm.

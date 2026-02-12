@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Development Portfolio - AIを活用した開発実績をまとめたポートフォリオサイト">
+  <meta name="theme-color" content="#e8a4b8">
+  <title>AI Development Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Portfolio</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/generated/hero-bg.webp" alt="" class="hero__bg-image" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">AI Development Portfolio</p>
+      <h1 class="hero__title">AIで、未来を<br>デザインする。</h1>
+      <p class="hero__subtitle-en">Designing the Future with AI</p>
+      <p class="hero__subtitle">AI開発エンジニアとして、最先端の技術で新しい体験を創り出しています。</p>
+      <a href="#works" class="btn btn--outline hero__cta">実績を見る</a>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header fade-in">
+        <div class="section__divider"></div>
+        <h2 class="section__title">About</h2>
+        <p class="section__subtitle">AI時代の開発者として</p>
+      </div>
+      <div class="about__content fade-in">
+        <div class="about__text">
+          <p>
+            最新のAI技術を活用し、効率的でクリエイティブな開発を実現しています。
+            Claude Code、Cursor、ChatGPT、GitHub Copilotなどの生成AIツールを
+            日常的なワークフローに組み込み、プロトタイピングからプロダクション
+            まで一貫した開発体験を追求しています。
+          </p>
+          <p>
+            AIとの協働により、従来では考えられなかったスピードと品質で
+            プロジェクトを完遂。フロントエンド、バックエンド、デザインまで
+            幅広い領域をカバーしています。
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-number">6+</span>
+            <span class="about__stat-label">Projects</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">AI</span>
+            <span class="about__stat-label">Powered</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-number">2025</span>
+            <span class="about__stat-label">Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section__header fade-in">
+        <div class="section__divider"></div>
+        <h2 class="section__title">Works</h2>
+        <p class="section__subtitle">AI開発の実績紹介</p>
+      </div>
+      <div class="works__grid">
+        <article class="card fade-in" data-delay="0">
+          <div class="card__image">
+            <img src="assets/placeholder_1.webp" alt="AI開発プロジェクト 1" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">AI Assistant</span>
+            <h3 class="card__title">AI チャットアシスタント</h3>
+            <p class="card__desc">Claude APIを活用した高度な対話型アシスタントの開発</p>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="100">
+          <div class="card__image">
+            <img src="assets/placeholder_2.webp" alt="AI開発プロジェクト 2" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">Web App</span>
+            <h3 class="card__title">AI駆動Webアプリ</h3>
+            <p class="card__desc">生成AIを統合したモダンWebアプリケーション</p>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="200">
+          <div class="card__image">
+            <img src="assets/placeholder_3.webp" alt="AI開発プロジェクト 3" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">Automation</span>
+            <h3 class="card__title">開発ワークフロー自動化</h3>
+            <p class="card__desc">CI/CDパイプラインのAI自動化システム</p>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="300">
+          <div class="card__image">
+            <img src="assets/placeholder_4.webp" alt="AI開発プロジェクト 4" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">Landing Page</span>
+            <h3 class="card__title">AIランディングページ</h3>
+            <p class="card__desc">AI画像生成を活用したLP制作ワークフロー</p>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="400">
+          <div class="card__image">
+            <img src="assets/placeholder_5.webp" alt="AI開発プロジェクト 5" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">Data Tool</span>
+            <h3 class="card__title">データ分析ツール</h3>
+            <p class="card__desc">AIアシストによるデータ可視化ダッシュボード</p>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="500">
+          <div class="card__image">
+            <img src="assets/placeholder_6.webp" alt="AI開発プロジェクト 6" loading="lazy" width="400" height="300">
+          </div>
+          <div class="card__body">
+            <span class="badge">Portfolio</span>
+            <h3 class="card__title">ポートフォリオサイト</h3>
+            <p class="card__desc">このサイト自体もAIと協働で構築しました</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header fade-in">
+        <div class="section__divider"></div>
+        <h2 class="section__title">Skills</h2>
+        <p class="section__subtitle">使用ツール・技術スタック</p>
+      </div>
+      <div class="skills__grid fade-in">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Claude Code</h3>
+          <p class="skill-card__desc">AIペアプログラミングによる高速開発</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Cursor</h3>
+          <p class="skill-card__desc">AI統合エディタでの効率的なコーディング</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">ChatGPT / GPT-4</h3>
+          <p class="skill-card__desc">設計・企画フェーズでのAI活用</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Frontend</h3>
+          <p class="skill-card__desc">HTML / CSS / JavaScript / React</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+              <line x1="4" y1="22" x2="4" y2="15"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">AI Image Gen</h3>
+          <p class="skill-card__desc">Imagen 4 / DALL-E / Midjourney</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">GitHub / CI-CD</h3>
+          <p class="skill-card__desc">バージョン管理と自動デプロイ</p>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header fade-in">
+        <div class="section__divider"></div>
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">お気軽にお問い合わせください</p>
+      </div>
+      <div class="contact__content fade-in">
+        <p class="contact__message">
+          AIを活用した開発にご興味がある方、<br>
+          プロジェクトのご相談など、お気軽にご連絡ください。
+        </p>
+        <div class="contact__links">
+          <a href="https://github.com" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="mailto:contact@example.com" class="btn btn--secondary">
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2025 AI Development Portfolio. Built with AI.</p>
+    </div>
+  </footer>
+
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
