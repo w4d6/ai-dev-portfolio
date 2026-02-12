@@ -92,6 +92,25 @@ ul {
   list-style: none;
 }
 
+/* --- Skip Link --- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 0 0 8px 8px;
+  z-index: 9999;
+  font-size: 14px;
+  transition: top var(--transition);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* --- Container --- */
 .container {
   max-width: var(--max-width);
@@ -807,5 +826,33 @@ ul {
 @media (max-width: 480px) {
   .about__stats {
     flex-direction: column;
+  }
+}
+
+/* --- Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero__bg-image {
+    animation: none;
+  }
+
+  .hero__scroll-line {
+    animation: none;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .skill-card__fill {
+    transform: scaleX(1);
   }
 }

@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AI Development Portfolio - AIを活用した開発実績をまとめたポートフォリオサイト">
   <meta name="theme-color" content="#e8a4b8">
+  <!-- OGP / Social Meta Tags -->
+  <meta property="og:title" content="AI Development Portfolio">
+  <meta property="og:description" content="AIを活用した開発実績をまとめたポートフォリオサイト">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://w4d6.github.io/ai-dev-portfolio/">
+  <meta property="og:image" content="https://w4d6.github.io/ai-dev-portfolio/assets/generated/hero-bg.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Development Portfolio">
+  <meta name="twitter:description" content="AIを活用した開発実績をまとめたポートフォリオサイト">
+  <meta name="twitter:image" content="https://w4d6.github.io/ai-dev-portfolio/assets/generated/hero-bg.webp">
+  <link rel="canonical" href="https://w4d6.github.io/ai-dev-portfolio/">
+  <!-- Favicon (SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
   <title>AI Development Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +25,8 @@
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
@@ -23,13 +38,14 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 
+  <main id="main-content">
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero__bg">
@@ -274,6 +290,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
